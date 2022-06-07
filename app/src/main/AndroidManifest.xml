@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ford Tracker"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".eurosToLiters"
+            android:exported="false"
+            android:label="Ford Tracker - Euros to Liters"
+            android:parentActivityName=".CalculatorActivity"/>
+        <activity
+            android:name=".KmsToLiters"
+            android:exported="false"
+            android:label="Ford Tracker - Km&apos;s to Liters"
+            android:parentActivityName=".CalculatorActivity" />
+        <activity
+            android:name=".LitersToKmsActivity"
+            android:exported="false"
+            android:label="Ford Tracker - Liters to Km&apos;s"
+            android:parentActivityName=".CalculatorActivity" />
+        <activity
+            android:name=".CalculatorActivity"
+            android:exported="false"
+            android:label="Ford Tracker - Calculator"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".infoRidesActivity"
+            android:exported="false"
+            android:label="Ford Tracker - Info Rides"
+            android:parentActivityName=".checkInfoActivity" />
+        <activity
+            android:name=".infoKmsActivity"
+            android:exported="false"
+            android:label="Ford Tracker - Info Kms"
+            android:parentActivityName=".checkInfoActivity" />
+        <activity
+            android:name=".checkInfoActivity"
+            android:exported="false"
+            android:label="Ford Tracker - Info"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".KmsAdd"
+            android:exported="false"
+            android:label="Ford Tracker - Add/Sub Km&apos;s"
+            android:parentActivityName=".ToolsActivity" />
+        <activity
+            android:name=".NoteRideActivity"
+            android:exported="false"
+            android:label="Ford Tracker - Ride"
+            android:parentActivityName=".ToolsActivity" />
+        <activity
+            android:name=".ToolsActivity"
+            android:exported="false"
+            android:label="Ford Tracker - Options"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

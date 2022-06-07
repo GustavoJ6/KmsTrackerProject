@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".eurosToLiters"
+    android:background="#B5CAD7"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/LittersAsk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="28dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewGasPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="252dp"
+            android:text="Insert diesel price: "
+            android:textColor="@color/black"
+            android:textSize="32dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="Insert your budget: "
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/budget"
+            android:layout_width="247dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="27dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBudget" />
+
+        <EditText
+            android:id="@+id/gasPrice"
+            android:layout_width="247dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="208dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="25dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBudget" />
+
+        <Button
+            android:id="@+id/button21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#0CEA15"
+            android:onClick="calculate3"
+            android:scaleX="0.70"
+            android:scaleY="1.3"
+            android:text="Calculate"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.339"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gasPrice" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#F10202"
+            android:onClick="clear3"
+            android:scaleX="0.50"
+            android:scaleY="0.9"
+            android:text="Clear"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/budget"
+            app:layout_constraintTop_toTopOf="@+id/budget" />
+
+        <Button
+            android:id="@+id/clearButton2"
+            android:layout_width="136dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="180dp"
+            android:backgroundTint="#F10202"
+            android:onClick="clear4"
+            android:scaleX="0.50"
+            android:scaleY="0.9"
+            android:text="Clear"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/budget"
+            app:layout_constraintTop_toTopOf="@+id/budget" />
+
+        <TextView
+            android:id="@+id/textViewLitersShow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.425"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button21"
+            app:layout_constraintVertical_bias="0.407" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
