@@ -18,4 +18,4 @@ the car and his total is incremented accordingly; "Check Info", where the user c
 previously; and the last "Calculator" where the user can manually input the price of the gas, the litters, the kms and the money, and do all the 
 calculations he needs.
 
-This project was finished, and although its utility, it is not the best nor near that.
+I consider this project as finished, and although its utility, with a deeper knowledge of OOP and CSS it could be a much better and eye-pleasing application (maybe something for the future...).
